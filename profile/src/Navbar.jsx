@@ -1,21 +1,27 @@
 import React from 'react'
+import SplitText from './components/SplitText';
+import GooeyNav from './components/GooeyNav';
+
+const navItems = [
+    { label: "HOME" },
+    { label: "ABOUT ME" },
+    { label: "PROJECTS" },
+    { label: "CERTIFICATION" }
+];
+
+
 
 const Navbar = () => {
+
+  
+
     return (
         <nav id='navbar'>
-
-
-            <h2 id='text'>Mainudheen</h2>
-            <div id='nav-button'>
-                <button id='nav-button'>HOME</button>
-                <button id='nav-button'>ABOUT ME</button>
-                <button id='nav-button'>PROJECTS</button>
-                <button id='nav-button'>CERTIFICATION</button>
-            </div>
-
-
+            <SplitText text="Mainudheen" className="split-large" />
+            
+            <GooeyNav items={navItems} />
         </nav>
     )
 }
 
-export default Navbar
+export default Navbar;
