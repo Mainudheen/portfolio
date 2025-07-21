@@ -1,8 +1,8 @@
 body{
-  background-color: rgb(36, 36, 36);
+  background-color: black;
 }
 #navbar{
-    background-color: rgb(36, 36, 36);
+   
     color: beige;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
      display: flex;
@@ -23,5 +23,20 @@ body{
     gap: 10px;
     
     color: azure;
-    background-color:rgb(36, 36, 36); 
+    
+}
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Ensures it stays behind your navbar and other content */
+  pointer-events: none; /* Allows clicks to pass through to content above */
+}
+
+.particles-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
 }
