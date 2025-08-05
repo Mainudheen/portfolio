@@ -34,7 +34,7 @@ body{
   z-index: -1; /* Ensures it stays behind your navbar and other content */
   pointer-events: none; /* Allows clicks to pass through to content above */
 }
-
+/*css*/
 .particles-container canvas {
   width: 100% !important;
   height: 100% !important;
